@@ -29,6 +29,11 @@
       /* font-family: "Roboto", sans-serif; */
     }
 
+    body {
+      overflow-x: hidden;
+        }
+
+
       /* Header and navbar */
       header {
         width: 100vw;
@@ -340,6 +345,21 @@
         width: 400px;
       }
     }
+    @media screen and (max-width:1000px) {
+
+      #ratingComp img{
+        width: 80vw;
+    }
+
+    #h1mainContent .sampleScroll{
+      font-size: 2rem;
+      margin-top: -50px;
+    }
+
+    #mainPara{
+      font-size: .8rem;
+    }
+  }
 
     /* main end  */
     
@@ -435,8 +455,18 @@
     #workVideo{
       margin-top: 50px ;
       display: flex;
+      /* width: 100vw; */
+
       justify-content: center;
       align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    #workVideo iframe{
+      width: 100vw;
+      height: 80vh;
+      padding: 10px;
     }
 
     @media screen and (max-width:700px){
@@ -467,7 +497,7 @@
       }
 
       #workVideo iframe{
-        width: 100vh;
+        width: 100vw;
         height: 300px;
         padding: 10px;
       }
@@ -779,11 +809,12 @@
     color:rgb(38, 28, 216);
   }
 
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width:1200px) {
     #reasonH1{
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     }
@@ -803,19 +834,21 @@
     }
 
     #cards1 {
+      width: 100vw;
+      /* height: 100vh; */
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-direction: column;
-      align-items: start;
+      align-items: center;
       text-align: center;
   }
 
      #cards1 #simBill{
-      margin-left: 50px;
+      margin-left: 0px;
      }
 
      #cards1 #invertory{
-      margin-left: 50px;
+      margin-left: 130px;
      }
   
      #cards2{
@@ -824,17 +857,17 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      align-items: start;
+      align-items: center;
       text-align: center;
       
      }
 
      #cards2 #Account{
-      margin-left: 50px;
+      margin-left: 0px;
      }
 
      #cards2 #invertory{
-      margin-left: 50px;
+      margin-left: 120px;
      }
     
   }
@@ -1460,6 +1493,7 @@ footer .copyright {
 .features {
   background: #fbfbfd;
   padding-bottom: 9rem;
+
 }
 
 .features--heading {
@@ -1477,7 +1511,7 @@ footer .copyright {
   justify-content: space-around;
   list-style: none;
   /* margin: 20px; */
-  overflow:scroll;
+  /* overflow:scroll; */
 }
 
 .features--list::-webkit-scrollbar {
@@ -1575,12 +1609,42 @@ footer .copyright {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  main {
+      width: 100vw;
+  }
+  .features--heading {
+      font-size: 3rem;
+  }
+
+  .features--list {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+.features--list img{ 
+  /* font-size: .2rem; */
+  /* gap: 500px; */
+  /* background-color: red; */
+  width: 4rem;
+  height: 10rem;
+}
 
 
+#pos span{ 
+  font-size: 2rem;
+}
 
+  .features-container {
+      flex-direction: column-reverse;
+      gap: 20px;
+  }
 
+  .features-container img {
+      width: 95%;
+  }
 
-
-
-
-
+  .features-container__text {
+      width: 95%;
+  }
+}
